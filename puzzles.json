@@ -1,0 +1,119 @@
+{
+
+
+    "Begified": {
+        "image": "images/GETBEGIFIED.png",
+        "answer": "GET REKT",
+        "nextRole": "1339645786253951048",
+        "removableRole": true
+
+    },
+    "Entry1": {
+        "question": "What are you here to do? One word and all CAPS.",
+        "answer": "BEG",
+        "hints": [ "Seriously you need a hint already. This doesnt look good for your begging career. It's 3 letters all CAPS" ],
+        "nextRole": "1339646187254452224",
+        "removableRole": true
+
+    },
+    "Entry2": {
+        "image": "images/Q2.png",
+        "answer": "D",
+        "hints": [ "OMG you seriously thought that...give me a break not even close. Check the ego and try again as you are a much lower beggar." ],
+        "nextRole": "1339646349016043690",
+        "removableRole": true
+
+    },
+    "Entry3": {
+        "image": "images/Q3.png",
+        "answer": "D, C",
+        "secretAnswer": "D C",
+        "secretResponse": "What were you never taught to use commas? ( Add a lil , between D C )",
+        "hints": [
+            "What do we always say? Don't fall for scams as we don't reward if you are stupid enough to fall for them and no amount of begging will help you.",
+            "Did you start from the bottom?"
+        ],
+        "nextRole": "1339646372617519176",
+        "removableRole": true
+
+    },
+    "Entry4": {
+        "image": "images/Q4.png",
+        "answer": "Yes",
+        "secretAnswer": "No",
+        "secretResponse": "Wow you are doing good then and have no need for the begging school. It is time for you to leave. Or try again your call.",
+        "nextRole": "1339646400274628689",
+        "removableRole": true
+
+    },
+    "Entry5": {
+        "image": "images/Q5.png",
+        "answer": "A",
+        "nextRole": "1339646887908737075",
+        "removableRole": true
+
+    },
+    "Entry6": {
+        "image": "images/Q6.png",
+        "answer": "Please gib, please sir, I really need this, I will do anything!",
+        "secretAnswer": "D",
+        "secretResponse": [ "Did you not read? It ain't multiple choice." ],
+        "nextRole": "1340349282510962829",
+        "removableRole": true
+
+    },
+    "RewardRoom": {
+        "image": "images/BottomBarrel.png",
+        "instructions": "Enter your BERA wallet address to gain the ability to mint and type in the answer: I passed Beggers School training! Remember you can only save your address once! So make sure you use the correct one.",
+        "hints": [ "Are you putting that in the right box?" ],
+        "answer": "I passed Beggers School training!",
+        "nextRole": "1154441471294971936",
+        "removableRole": false
+    },
+
+
+
+    "1": {
+        "instructions": "Simply put in your answer into the text box",
+        "question": "Beg4Pay is dedicated to helping users earn tokens by doing what?",
+        "answer": "Begging",
+        "secretAnswer": "Beg",
+        "secretResponse": "how did you know? jk wrong lmao ",
+        "hints": "What do panhandlers do?",
+        "nextRole": "1335704809944252476"
+
+    },
+    "2": {
+        "instructions": "Simply put in your answer into the text box",
+        "question": "What chain is Beg on?",
+        "answer": "Berachain",
+        "hints": "This should be pretty easy.",
+        "nextRole": "1335704959873847469"
+
+    },
+    "3": {
+        "instructions": "For this test were gonna play a word search",
+        "image": "images/wordsearch.jpg",
+        "question": null,
+        "answer": "Proof Of Liquidity",
+        "hints": "This is primarily associated with Berachain.",
+        "nextRole": "1334527211667197993"
+
+    },
+    "4": {
+        "instructions": "This is a simple multiple choice question",
+        "question": "What phrase would be an appropriate phrase when trying to get an airdrop? Options: A) Gib it now! B) Please boss my family C) You are simply amazing D) Please gib, please sir, I really need this more than you.",
+        "answer": "D",
+        "hints": "How hard are you willing to beg?",
+        "nextRole": "1335705131542646886"
+
+    },
+    "5": {
+        "instructions": "To answer it you need only enter the missing words with a space between them. It would look something like this...... EVERY BAD BEGGAR LOVES SPANKINGS (notice a space between each word... no coma no period. Follow directions or you will never be a true beggar)",
+        "question": "To achieve riches and glory you must _____ to the ___ of the ___________ so you too can become the top  (Unscramble letters: RABE). But first, you must beg your boss (that's me) to gib you __.(Pick one of the following as the answer here: Airdrop, Tokens, Work, Meaning in life, Love)",
+        "answer": "CLIMB TOP LEADERBOARD BEAR TOKENS",
+        "hints": "Think about walking.",
+        "nextRole": "1335705242045648976"
+
+    }
+}
