@@ -19,7 +19,7 @@ const puzzleRooms = {
 
 const specialMessages = {
     "Entry6": "🏆 You've actually done it! Open up the final stage and become a bottom of the barrel begger!",
-    "RewardRoom": "Congrates on finishing begging school go out and beg to your hearts content!!!"
+    "RewardRoom": "Congrats on finishing begging school go out and beg to your hearts content!!!"
 };
 
 const failedAttempts = new Map();
