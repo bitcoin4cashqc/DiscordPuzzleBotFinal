@@ -1,4 +1,4 @@
-﻿const { Client, GatewayIntentBits, ActionRowBuilder, ButtonBuilder, ButtonStyle, ModalBuilder, TextInputBuilder, TextInputStyle, SlashCommandBuilder } = require('discord.js');
+﻿const { Client, GatewayIntentBits, ActionRowBuilder, ButtonBuilder, ButtonStyle, ModalBuilder, TextInputBuilder, TextInputStyle, SlashCommandBuilder, MessageFlags } = require('discord.js');
 const fs = require('fs');
 
 const puzzles = JSON.parse(fs.readFileSync('puzzles.json', 'utf8'));
@@ -133,7 +133,7 @@ client.on('interactionCreate', async interaction => {
             responseMessage += `\n🔍 ${secretResponse}`;
         }
 
-        await interaction.reply({ content: responseMessage, ephemeral: true });
+        await interaction.reply({ content: responseMessage, flags: MessageFlags.Ephemeral });
     }
 
     if (interaction.isChatInputCommand() && interaction.commandName === 'question') {
@@ -141,7 +141,7 @@ client.on('interactionCreate', async interaction => {
         const puzzleId = Object.keys(puzzleRooms).find(key => puzzleRooms[key] === channelId);
 
         if (!puzzleId || !puzzles[puzzleId]) {
-            await interaction.reply({ content: `❌ No puzzle is assigned to this channel.`, ephemeral: true });
+            await interaction.reply({ content: `❌ No puzzle is assigned to this channel.`, flags: MessageFlags.Ephemeral });
             return;
         }
 
