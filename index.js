@@ -97,6 +97,7 @@ client.on('interactionCreate', async interaction => {
         if (isCorrect) {
            
             responseMessage = specialMessages[puzzleId] || `✅ Correct! You have unlocked the next stage.\n`;
+            await interaction.reply({ content: responseMessage, flags: MessageFlags.Ephemeral });
 
             const nextRoleId = puzzles[puzzleId].nextRole;
 
@@ -123,6 +124,7 @@ client.on('interactionCreate', async interaction => {
             failedAttempts.set(attemptKey, attempts);
 
             responseMessage += `❌ Incorrect, try again!\n`;
+            await interaction.reply({ content: responseMessage, flags: MessageFlags.Ephemeral });
 
             if (hints.length > 0 && attempts <= hints.length) {
                 responseMessage += `\n💡 Hint ${attempts}: ${hints[attempts - 1]}`;
@@ -133,7 +135,7 @@ client.on('interactionCreate', async interaction => {
             responseMessage += `\n🔍 ${secretResponse}`;
         }
 
-        await interaction.reply({ content: responseMessage, flags: MessageFlags.Ephemeral });
+        
     }
 
     if (interaction.isChatInputCommand() && interaction.commandName === 'question') {
